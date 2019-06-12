@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="Competition score <= 13.5\ngini = 0.739\nsamples = 93\nvalue = [29, 17, 20, 27]", fillcolor="#fefbf9"] ;
+1 [label="Location__Shopping Centre <= 0.5\ngini = 0.621\nsamples = 34\nvalue = [19, 6, 5, 4]", fillcolor="#f3c4a3"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Store age <= 2.5\ngini = 0.355\nsamples = 19\nvalue = [15, 2, 2, 0]", fillcolor="#eb9f68"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0]", fillcolor="#399de5"] ;
+2 -> 3 ;
+4 [label="gini = 0.29\nsamples = 18\nvalue = [15, 2, 1, 0]", fillcolor="#ea995e"] ;
+2 -> 4 ;
+5 [label="Floor Space <= 11979.5\ngini = 0.747\nsamples = 15\nvalue = [4, 4, 3, 4]", fillcolor="#ffffff"] ;
+1 -> 5 ;
+6 [label="gini = 0.5\nsamples = 6\nvalue = [3, 3, 0, 0]", fillcolor="#ffffff"] ;
+5 -> 6 ;
+7 [label="gini = 0.667\nsamples = 9\nvalue = [1, 1, 3, 4]", fillcolor="#f8defb"] ;
+5 -> 7 ;
+8 [label="Location__High Street <= 0.5\ngini = 0.72\nsamples = 59\nvalue = [10, 11, 15, 23]", fillcolor="#f8dbfa"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Floor Space <= 18499.5\ngini = 0.639\nsamples = 42\nvalue = [6, 4, 10, 22]", fillcolor="#f0b5f5"] ;
+8 -> 9 ;
+10 [label="gini = 0.687\nsamples = 33\nvalue = [6, 3, 10, 14]", fillcolor="#f8ddfa"] ;
+9 -> 10 ;
+11 [label="gini = 0.198\nsamples = 9\nvalue = [0, 1, 0, 8]", fillcolor="#dc52e8"] ;
+9 -> 11 ;
+12 [label="Staff <= 6.5\ngini = 0.685\nsamples = 17\nvalue = [4, 7, 5, 1]", fillcolor="#e0fbde"] ;
+8 -> 12 ;
+13 [label="gini = 0.469\nsamples = 8\nvalue = [3, 5, 0, 0]", fillcolor="#b5f5b0"] ;
+12 -> 13 ;
+14 [label="gini = 0.617\nsamples = 9\nvalue = [1, 2, 5, 1]", fillcolor="#aad5f4"] ;
+12 -> 14 ;
+}
