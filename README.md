@@ -1,1 +1,2 @@
-
+- Analysis of store data
+- Build classification model
